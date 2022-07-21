@@ -1,0 +1,73 @@
+@import "./libs/normalize.scss";
+@import "./variables";
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Jost", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  width: 1290px;
+  height: 900px;
+}
+
+.navigation-title {
+  margin-top: 60px;
+}
+
+.navigation-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigation-item {
+  margin-right: 16px;
+
+  p {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+.left {
+  margin-right: 72px;
+  margin-left: 147px;
+}
+
+.section {
+  margin-top: 80px;
+
+  h1 {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 58px;
+  }
+
+  p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29px;
+  }
+}
+
+.rigth {
+  position: relative;
+  z-index: 1;
+  width: 775px;
+  height: 900px;
+}
+
+.right-background {
+  position: absolute;
+  z-index: -1;
+  top: 30px;
+  left: 65px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #fbe0dc;
+  width: 680px;
+  height: 840px;
+  border-radius: 20px;
+}
