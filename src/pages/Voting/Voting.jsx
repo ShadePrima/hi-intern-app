@@ -1,17 +1,14 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Header from "../../components/Header/Header";
-import HomeImg from "../../components/HomeImg/HomeImg";
-import Navigation from "../../components/Navigation/Navigation";
-import Breeds from "../Breeds/Breeds";
-import Gallery from "../Gallery/Gallery";
-import Voting from "../Voting/Voting";
-import styles from "./Home.module.scss";
 
-const Home = () => {
+import Header from "../../components/Header/Header";
+
+import Navigation from "../../components/Navigation/Navigation";
+
+import VotingPage from "../../components/VotingPage/VotingPage";
+
+const Voting = () => {
   return (
     <div>
-      home
       <div className="wrapper">
         <div className="left">
           <Header />
@@ -19,11 +16,11 @@ const Home = () => {
         </div>
 
         <div className="rigth">
-          <HomeImg />
+          <VotingPage />
         </div>
       </div>
     </div>
   );
 };
 
-export default Home;
+export default Voting;
