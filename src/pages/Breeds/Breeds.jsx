@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import HomeImg from "../../components/HomeImg/HomeImg";
+
 import Navigation from "../../components/Navigation/Navigation";
+import Search from "../../components/Search/Search";
+
 
 const Breeds = () => {
   return (
     <div>
-    breeds
       <div className="wrapper">
         <div className="left">
           <Header />
@@ -14,7 +15,8 @@ const Breeds = () => {
         </div>
 
         <div className="rigth">
-          <HomeImg />
+          <Search />
+
         </div>
       </div>
     </div>

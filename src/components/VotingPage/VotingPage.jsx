@@ -1,9 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import likeHeader from "../../assets/img/voting/like.png";
-import heartHeader from "../../assets/img/voting/heart.png";
-import disLikeHeader from "../../assets/img/voting/dislike.png";
-import searchButton from "../../assets/img/voting/search-button.png";
+
 import arrowLeft from "../../assets/img/voting/arrow left 1.png";
 import cat from "../../assets/img/voting/cat.png";
 
@@ -19,32 +18,17 @@ import styles from "./VotingPage.module.scss";
 const VotingPage = () => {
   return (
     <div className={styles.container}>
-      <header className={styles.header}>
-        <div className={styles.search}>
-          <input placeholder="Search for breeds by name" />
-          <img src={searchButton} alt="Search" />
-        </div>
-        <div className={styles.buttons}>
-          <div className={styles.button}>
-            <img src={likeHeader} alt="Like" />
-          </div>
-          <div className={styles.button}>
-            <img src={heartHeader} alt="Like" />
-          </div>
-          <div className={styles.button}>
-            <img src={disLikeHeader} alt="Like" />
-          </div>
-        </div>
-      </header>
-
       <div className={styles.bottomSection}>
         <section className={styles.section}>
           <div className={styles.topButton}>
             <div className={styles.arrowLeft}>
               <img src={arrowLeft} alt="arrow-left" />
             </div>
-            <div className={styles.sectionButton}>VOTING</div>
+            <Link to="/">
+              <div className={styles.sectionButton}>VOTING</div>
+            </Link>
           </div>
+
           <div className={styles.content}>
             <img className={styles.contenImgCat} src={cat} alt="Cat" />
             <div className={styles.panelButton}>
